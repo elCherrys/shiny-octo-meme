@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
+﻿
 using ConsoleApp2.NewFolder;
 using ConsoleApp2.BI;
 
