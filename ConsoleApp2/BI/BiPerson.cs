@@ -21,24 +21,24 @@ namespace ConsoleApp2.BI
             if (PersonParameter.MotherLastName.Length <= 2)
                 ChecksList.Add("Ingrese un nombre valido");
 
-            if (CheckedData(PersonParameter.Name))
+            if (VerifyText(PersonParameter.Name))
                 ChecksList.Add("Nombre invalido");
 
-            if (CheckedData(PersonParameter.FatherLastName))
+            if (VerifyText(PersonParameter.FatherLastName))
                 ChecksList.Add("Nombre invalido");
 
-            if (CheckedData(PersonParameter.MotherLastName))
+            if (VerifyText(PersonParameter.MotherLastName))
                 ChecksList.Add("Nombre invalido");
 
             return ChecksList;
         }
 
-        private static bool VerfifyText(string text)
+        private static bool VerifyText(string text)
         {
             bool Check = false;
             foreach(char letter in text.Replace(" ", ""))
             {
-                if (char.IsLetter(letter))
+                if (!char.IsLetter(letter))
                 {
                     Check = true;
                     break;
@@ -49,4 +49,4 @@ namespace ConsoleApp2.BI
         }
 
     }
-}
+

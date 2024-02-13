@@ -15,3 +15,18 @@ Person.FatherLastName = Console.ReadLine();
 
 BiPerson.CheckedData(Person);
 
+List <string> CheckList = BiPerson.CheckedData(Person);
+
+if (CheckList.Count == 0)
+{
+    Console.WriteLine("Listo!");
+}
+else
+{
+    Console.WriteLine("Lisrado de errores");
+    foreach (var check in CheckList)
+    {
+        Console.WriteLine($"*{check}");
+    }
+}
+Console.ReadKey();
