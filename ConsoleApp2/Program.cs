@@ -7,11 +7,14 @@ Dto Person = new();
 Console.Write("Inresa el nombre:");
 Person.Name = Console.ReadLine();
 
-Console.Write("Ingresa tu apellido materno");
+Console.Write("Ingresa tu apellido materno:");
 Person.MotherLastName = Console.ReadLine();
 
-Console.Write("Ingresa tu apellido paterno");
+Console.Write("Ingresa tu apellido paterno:");
 Person.FatherLastName = Console.ReadLine();
+
+Console.Write("Ingresa tu edad:");
+Person.Age = Console.ReadLine();
 
 BiPerson.CheckedData(Person);
 

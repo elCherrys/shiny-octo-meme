@@ -5,6 +5,7 @@
         public string Name { get; set; }
         public string MotherLastName { get; set;}
         public string FatherLastName { get; set;}
+        public string Age { get; set;}
 
     }
 }
